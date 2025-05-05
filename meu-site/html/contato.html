@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contato</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+  <header>
+    <button id="toggle-theme">🌙 Modo Escuro</button>
+
+    <h1>NOME DO SITE</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+  <main>
+    <main>
+      <h2>Entre em Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+    
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    
+      
+    
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 – Meu Nome</p>
+  </footer>
+
+  <p><i class="fas fa-envelope"></i> email@exemplo.com</p>
+<p><i class="fas fa-phone"></i> (11) 91234-5678</p>
+<p><i class="fab fa-github"></i> github.com/seuperfil</p>
+<p><i class="fab fa-linkedin"></i> linkedin.com/in/seuperfil</p>
+<script>
+  const botao = document.getElementById('toggle-theme');
+  botao.addEventListener('click', () => {
+    document.body.classList.toggle('escuro');
+  });
+</script>
+
+</body>
+</html>

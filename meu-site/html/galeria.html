@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria</title>
+  <link rel="stylesheet" href="../estilo/estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Minha Galeria</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="galeria">
+      <h2>Imagens em Destaque</h2>
+      <div class="grid-galeria">
+        <img src="../imagens/img1.jpg" alt="Imagem 1">
+        <img src="../imagens/img2.jpg" alt="Imagem 2">
+        <img src="../imagens/img3.jpg" alt="Imagem 3">
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal para imagem ampliada -->
+  <div id="modal" class="modal">
+    <span id="fechar">&times;</span>
+    <img id="img-modal" class="modal-conteudo">
+  </div>
+
+  <script src="../script/modal.js"></script>
+</body>
+</html>

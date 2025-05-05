@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sobre</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+  <header>
+    
+    <button id="toggle-theme">🌙 Modo Escuro</button>
+
+    <h1>NOME DO SITE</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+  <main>
+    
+        <h2>Sobre Mim</h2>
+        <p>Aqui vai mais informações sobre mim e meus projetos.</p>
+      </main>
+      
+  </main>
+  <footer>
+    <p>&copy; 2025 – Meu Nome</p>
+  </footer>
+
+  <p><i class="fas fa-envelope"></i> email@exemplo.com</p>
+<p><i class="fas fa-phone"></i> (11) 91234-5678</p>
+<p><i class="fab fa-github"></i> github.com/seuperfil</p>
+<p><i class="fab fa-linkedin"></i> linkedin.com/in/seuperfil</p>
+<script>
+  const botao = document.getElementById('toggle-theme');
+  botao.addEventListener('click', () => {
+    document.body.classList.toggle('escuro');
+  });
+</script>
+
+</body>
+</html>

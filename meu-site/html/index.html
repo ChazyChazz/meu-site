@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Primeiro Site</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <button id="toggle-theme">🌙 Modo Escuro </button>
+    <h1>NOME DO SITE</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+  <main>
+    <p>Esse é o começo do meu projeto!</p>
+    <img src="../imagens/exemplo.jpg " alt="flyer" width="300">
+    <section> <h2> Sobre Mim</h2>
+    <p> Este é um projeto pessoal onde estou aprendendo a criar sites. Em breve terá mais conteúdos por aqui!</p>
+    
+    </section>
+<section class="portfolio">
+  <h2>Projetos Recentes</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Site pessoal</h3>
+      <p> Um site feito do zero com HTML E css</p>
+    </div>
+    <div class="card">
+      <h3>Jogo 2D</h3>
+      <p>Prototipo De Jogo Feito com Unity.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="galeria">
+  <h2>Galeria De Imagens</h2>
+  <div class="grid-galeria">
+    <img src="../imagens/exemplo.jpg" alt="imagem 1"> 
+    <img src="../imagens/exemplo2.jpg" alt="imagem 1">
+    <img src="../imagens/exemplo3.jpg" alt="imagem 1">
+  </div>
+</section>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 – Meu Nome</p>
+  </footer>
+
+  <p><i class="fas fa-envelope"></i> email@exemplo.com</p>
+<p><i class="fas fa-phone"></i> (11) 91234-5678</p>
+<p><i class="fab fa-github"></i> github.com/seuperfil</p>
+<p><i class="fab fa-linkedin"></i> linkedin.com/in/seuperfil</p>
+<script>
+  const botao = document.getElementById('toggle-theme');
+  botao.addEventListener('click', () => {
+    document.body.classList.toggle('escuro');
+  });
+</script>
+
+</body>
+
+
+</html>

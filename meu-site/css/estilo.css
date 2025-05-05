@@ -1,0 +1,272 @@
+body { 
+    font-family: Arial,  sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header, footer{
+    background-color: #005f73;
+    color: white;
+    padding:  20px;
+    text-align: center;
+}
+
+main{
+    padding:  20px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+section{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0,0,0,0,1);
+}
+
+nav ul{
+    list-style: none;
+    background-color: #0a9396;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li a {
+    text-decoration: none;
+    color:  white;
+    font-weight: bold;
+    padding: 15px;
+    display: block;
+}
+
+nav ul li a:hover{
+    background-color: #94d2bd;
+    color: black;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+@media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    img {
+      width: 100%;
+    }
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  input, textarea{
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  button{
+    background-color: #005f73;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  
+  }
+
+ button:hover{
+    background-color: #0a9396;
+ }
+ 
+ .portfolio{
+    margin-top: 40px;
+ }
+
+ .cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+ }
+ .card{
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0,0,0,0,1);
+    flex: 1 1 200px;
+ }
+
+ @keyframes FadeIn{
+  from { opacity: 0;transform: tranlateY(20PX);}
+  to{ opacity: 1; transform: translateY(0);}
+
+ }
+  
+ .proojeto:hover{
+  transform: scale(1.02);
+  box-shadow:  0 4px 15px rgb(0,0,0,0,2);
+  transition: all 0.3s ease;
+ }
+ body.escuro {
+  background-color: #121212;
+  color: white;
+ }
+ body.escuro header,
+ body.escuro nav,
+ body.escuro footer,
+ body.escuro .projeto{
+  background-color:  #1e1e1e;
+ }
+
+ #toogle-theme {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding:  6px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0a9396;
+  color: white;
+  cursor: pointer;
+ }
+ .grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+ }
+ .grid-galeria img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0,0,0,0,2);
+  transition: transform 0.3s ease;
+ }
+ .grid-galeria img :hover{
+  transform: scale(1.03);
+ }
+ 
+ @media (max-width: 600px){
+  .grid-galeria{
+    grid-template-columns: 1fr;
+  }
+  nav ul{
+    flex-direction: column;
+    gap: 10px;
+  }
+  header, nav {
+    text-align: center;
+  }
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding:  0;
+}
+
+:modal{
+  display: none;
+  position: fixed ;
+  z-index: 100;
+  left: 0;
+  top: 0 ;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0, 0, 8);
+}
+.modal-conteudo{
+  display: block;
+  margin: 10% auto;
+  max-width: 80%;
+  border-radius: 8px;
+}
+#fechar{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.blog{
+  padding: 30px;
+  text-align: center;
+
+}
+.postagens{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+
+}
+
+.card-post{
+  background: #fff;
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0, 0, 1);
+  text-align: left;
+}
+
+.card-post h3{
+  margin-top: 0;
+
+}
+
+.card-post a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+
+}
+
+.card-post a:hover{
+  text-decoration: underline;
+
+}
+
+footer{
+  background: #222;
+  color: #fff
+  padding: 20px;
+  text-align: center;
+  margin-top:40px;
+
+}
+
+footer .redes img{
+  width: 24px;
+  margin: 0 10px;
+  vertical-align: middle;
+
+}
